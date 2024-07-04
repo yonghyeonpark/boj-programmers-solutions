@@ -15,12 +15,12 @@ public class Main {
         int m = Integer.parseInt(st.nextToken());
         int start = Integer.parseInt(st.nextToken());
 
-        v = new boolean[n+1];
-        for (int i = 0; i <= n; i++) {
+        v = new boolean[n + 1];
+        for(int i = 0; i <= n; i++) {
             graph.add(new ArrayList<>());
         }
 
-        for (int i = 0; i < m; i++) {
+        for(int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
@@ -32,12 +32,11 @@ public class Main {
         }
         dfs(start);
         System.out.println();
-        v = new boolean[n+1];
+        v = new boolean[n + 1];
         bfs(start);
     }
 
-    // 스택 or 재귀
-    private static void dfs(int x) {
+    public static void dfs(int x) {
         System.out.print(x + " ");
         v[x] = true;
         for (int i = 0; i < graph.get(x).size(); i++) {
@@ -48,8 +47,7 @@ public class Main {
         }
     }
 
-    // 큐
-    private static void bfs(int start) {
+    public static void bfs(int start) {
         Queue<Integer> q = new LinkedList<>();
         q.offer(start);
         v[start] = true;
