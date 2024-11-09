@@ -25,8 +25,15 @@ class Solution {
         int max = 0;
         int min = 0;
         if (!pqMax.isEmpty()) {
-            max = pqMax.poll();
-            min = pqMin.poll();
+            int size = pqMax.size();
+            if (size == 1) {
+                max = pqMax.poll();
+                min = max;
+            }
+            if (size != 1) {
+                max = pqMax.poll();
+                min = pqMin.poll();
+            }
         }
         int[] answer = {max, min};
         return answer;
