@@ -5,7 +5,7 @@
 
 ## 🗂️ 폴더 구조
 
-### 🌐 Baekjoon Online Judge
+### [Baekjoon Online Judge]
 
 문제들은 `solved.ac` 티어 기준으로 분류합니다.
 
@@ -14,7 +14,7 @@
 - ${\textsf{\color{goldenrod}백준/Gold}}$
 - ${\textsf{\color{blue}백준/Review}}$ : 복습한 문제들
 
-### 🌐 Programmers
+### [Programmers]
 
 문제들은 난이도(Level) 기준으로 분류합니다.
 
@@ -24,11 +24,17 @@
 
 ## 📚 풀이 방식
 
-### 🌐 Baekjoon Online Judge
+### [Baekjoon Online Judge]
 
 - 원하는 알고리즘 유형을 선택하여 해당하는 문제를 풉니다.
 - 한 번 풀어서 끝내지 않고, 복습을 통해 풀이 과정을 다시 기억합니다. 
 
-### 🌐 Programmers
+### [Programmers]
 
 - 적절한 난이도를 선택하고 시간을 측정해서 문제를 풉니다.
+
+## ⭐ Rating
+
+### [Baekjoon Online Judge]
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=zigugu)](https://solved.ac/zigugu/)
