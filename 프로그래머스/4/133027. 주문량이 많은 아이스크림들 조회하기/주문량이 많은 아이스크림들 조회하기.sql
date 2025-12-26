@@ -1,0 +1,13 @@
+SELECT *
+FROM (
+    SELECT fh.FLAVOR
+    FROM FIRST_HALF fh
+    JOIN (
+        SELECT 
+        FLAVOR,
+        SUM(TOTAL_ORDER) AS JULY_COUNT
+        FROM JULY
+        GROUP BY FLAVOR
+    ) j ON fh.FLAVOR = j.FLAVOR
+    ORDER BY (fh.TOTAL_ORDER + j.JULY_COUNT) DESC)
+WHERE ROWNUM <= 3
